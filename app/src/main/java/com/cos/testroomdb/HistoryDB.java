@@ -14,7 +14,7 @@ public abstract class HistoryDB extends RoomDatabase {
 
     public abstract HistoryDAO historyDAO();
 
-    //MainActivity에서 호출해서
+
     public static HistoryDB getInstance(Context context){
         if(INSTANCE == null){
             INSTANCE = Room.databaseBuilder(context.getApplicationContext(), HistoryDB.class, "history.db").build();

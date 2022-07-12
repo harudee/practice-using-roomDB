@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "history")
 public class History {
     //get/set field values
-    //클래스에 뭐뭐 넣을지 정함
 
     @PrimaryKey(autoGenerate = true)
     public int id;
@@ -17,6 +16,5 @@ public class History {
 
     @ColumnInfo(name = "answer")
     public String result;
-
 
 }

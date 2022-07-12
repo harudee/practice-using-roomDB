@@ -14,7 +14,7 @@
         android:padding="20dp">
 
         <EditText
-            android:id="@+id/name"
+            android:id="@+id/tv_expression"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -22,7 +22,7 @@
             android:hint="계산" />
 
         <EditText
-            android:id="@+id/answer"
+            android:id="@+id/tv_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -50,20 +50,38 @@
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-        <ScrollView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent" />
+
+        <!--<ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
 
             <LinearLayout
-                android:id="@+id/ll_content"
+                android:id="@+id/ll_history_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        </ScrollView>-->
+
+        <!--<LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/list_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:divider="@null"/>
 
-            </LinearLayout>
+        </LinearLayout>-->
 
-        </ScrollView>
 
     </LinearLayout>
 
